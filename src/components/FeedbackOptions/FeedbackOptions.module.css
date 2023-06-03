@@ -1,0 +1,12 @@
+.button {
+  background-color: rgb(92, 224, 180);
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(16, 4, 64, 0.9);
+  cursor: pointer;
+}
+
+.feedbackStatistics {
+  display: none;
+}
