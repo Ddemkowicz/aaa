@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import css from './Statistics.module.css';
+import PropTypes from "prop-types";
+import React from "react";
+import css from "./Statistics.module.css";
 
-const Statistics = props => {
-  const { good, neutral, bad } = props;
-  const total = good + neutral + bad;
+const Statistics = (props) => {
+  const { good, neutral, bad, total } = props;
   const positive = Math.round((good / total) * 100);
   return (
     <div className={css.statistics}>
