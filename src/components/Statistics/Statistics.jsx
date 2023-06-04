@@ -3,13 +3,13 @@ import React from "react";
 import css from "./Statistics.module.css";
 
 const Statistics = (props) => {
-  const { options, positive, total } = props;
+  const { good, neutral, bad, positive, total } = props;
 
   return (
     <div className={css.statistics}>
-      <p>Good: {options.good}</p>
-      <p>Neutral: {options.neutral}</p>
-      <p>Bad: {options.bad}</p>
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
       <p>Total: {total}</p>
       <p>Positive feedback: {positive}%</p>
     </div>
@@ -17,3 +17,11 @@ const Statistics = (props) => {
 };
 
 export default Statistics;
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  positive: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+};
