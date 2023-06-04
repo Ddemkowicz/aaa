@@ -3,13 +3,13 @@ import React from "react";
 import css from "./Statistics.module.css";
 
 const Statistics = (props) => {
-  const { good, neutral, bad, total } = props;
-  const positive = Math.round((good / total) * 100);
+  const { options, positive, total } = props;
+
   return (
     <div className={css.statistics}>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
+      <p>Good: {options.good}</p>
+      <p>Neutral: {options.neutral}</p>
+      <p>Bad: {options.bad}</p>
       <p>Total: {total}</p>
       <p>Positive feedback: {positive}%</p>
     </div>
