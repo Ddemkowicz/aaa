@@ -21,11 +21,9 @@ export const App = () => {
   const handleButtonClick = (option) => {
     if (option === "good") {
       setOptions(options.good + 1);
-    }
-    if (option === "neutral") {
+    } else if (option === "neutral") {
       setOptions(options.neutral + 1);
-    }
-    if (option === "bad") {
+    } else if (option === "bad") {
       setOptions(options.bad + 1);
     }
   };
